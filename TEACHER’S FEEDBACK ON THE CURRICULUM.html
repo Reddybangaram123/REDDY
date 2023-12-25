@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEACHER’S FEEDBACK ON THE CURRICULUM </title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: left;
+      margin: 0 auto;
+      width: 80%;
+    }
+    h2 {
+      margin-bottom: 20px;
+      text-align: center; /* Add this line to center-align the heading */
+    }
+    label {
+      display: inline-block;
+      width: 200px;
+      text-align: left;
+      margin-bottom: 10px;
+    }
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="date"],
+    textarea {
+      width: 250px;
+      height: 30px; /* Set the height as per your requirement */
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #f5f0f0;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+    input[type="submit"],
+    input[type="reset"] {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      margin-right: 10px;
+    }
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+      background-color: #45a049;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 5px auto;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 5px;
+      text-align: left;
+      font-size: 14px;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    
+    /* Adjust the height between rows in the table */
+    td p {
+      margin: 5px 0;
+    }
+
+    /* Ensure each section is on a new printed page */
+    @media print {
+      h2 {
+        page-break-before: always;
+      }
+    }
+  </style>
+</head> 
+<style>
+    body {
+      font-family: Arial, sans-serif;
+  </style>
+  <h2 style="text-align: center;" >TEACHER’S FEEDBACK ON THE CURRICULUM</h2>
+  <div>
+  <form  method="POST" name = "google-sheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: left; 
+  </style>
+    <label for="Name of the Faculty">Name:</label>
+    <input type="text" id="Name of the Faculty" name="Name of the Faculty" required><br>
+    
+    <label for="Department">Department name:</label>
+    <input type="text" id="Department" name="Department" required><br>
+    
+    <label for="designation">Present Designation:</label>
+    <input type="text" id="designation" name="designation" required><br>
+    
+           <style>
+    p{
+      text-align: left;
+    }
+  </style>
+    <p>please indicate your level of satisfaction with the following statement by choosing between 1 to 5.</p><br>
+    <p style="text-align: center;">* Rating Score: Excellent(5), Very Good(4), Good(3), Average(2), Below Average(1).</p>
+    
+    <table>
+      <tr>
+        <th><p style="text-align: center;">S.No</p></th>
+        <th><p style="text-align: center;">QUESTIONS</p></th>
+        <th><p style="text-align: center;">5</p></th>
+        <th><p style="text-align: center;">4</p></th>
+        <th><p style="text-align: center;">3</p></th>
+        <th><p style="text-align: center;">2</p></th>
+        <th><p style="text-align: center;">1</p></th>
+      </tr>
+      <tr>
+        <td><p style="text-align: center;">1</p></td>
+        <td>Rate the course content present in syllabus.</td>
+        <td><input type="radio" name="q1" value="5"></td>
+        <td><input type="radio" name="q1" value="4"></td>
+        <td><input type="radio" name="q1" value="3"></td>
+        <td><input type="radio" name="q1" value="2"></td>
+        <td><input type="radio" name="q1" value="1"></td>
+      </tr>
+      <tr>
+        <td><p style="text-align: center;">2</p></td>
+        <td>Rate the Relevance of text book and reference book.</td>
+        <td><input type="radio" name="q2" value="5"></td>
+        <td><input type="radio" name="q2" value="4"></td>
+        <td><input type="radio" name="q2" value="3"></td>
+        <td><input type="radio" name="q2" value="2"></td>
+        <td><input type="radio" name="q2" value="1"></td>
+      </tr>
+      <tr>
+        <td><p style="text-align: center;">3</p></td>
+        <td>Rate the updated concepts in the curriculum.</td>
+        <td><input type="radio" name="q3" value="5"></td>
+        <td><input type="radio" name="q3" value="4"></td>
+        <td><input type="radio" name="q3" value="3"></td>
+        <td><input type="radio" name="q3" value="2"></td>
+        <td><input type="radio" name="q3" value="1"></td>
+      </tr>
+      <tr>
+        <td><p style="text-align: center;">4</p></td>
+        <td>Rate the relevance of practical content to theory.</td>
+        <td><input type="radio" name="q4" value="5"></td>
+        <td><input type="radio" name="q4" value="4"></td>
+        <td><input type="radio" name="q4" value="3"></td>
+        <td><input type="radio" name="q4" value="2"></td>
+        <td><input type="radio" name="q4" value="1"></td>
+      </tr>
+      <tr>
+        <td><p style="text-align: center;">5</p></td>
+        <td>The course outcome are well defined and clear.</td>
+        <td><input type="radio" name="q5" value="5"></td>
+        <td><input type="radio" name="q5" value="4"></td>
+        <td><input type="radio" name="q5" value="3"></td>
+        <td><input type="radio" name="q5" value="2"></td>
+        <td><input type="radio" name="q5" value="1"></td>
+      </tr>
+      <tr>
+        <td><p style="text-align: center;">6</p></td>
+        <td>Rate the effectiveness of  curriculum to face competitive exams.</td>
+        <td><input type="radio" name="q6" value="5"></td>
+        <td><input type="radio" name="q6" value="4"></td>
+        <td><input type="radio" name="q6" value="3"></td>
+        <td><input type="radio" name="q6" value="2"></td>
+        <td><input type="radio" name="q6" value="1"></td>
+      </tr>
+      <tr>
+        <td><p style="text-align: center;">7</p></td>
+        <td>Rate the relevance of the industry needs.</td>
+        <td><input type="radio" name="q7" value="5"></td>
+        <td><input type="radio" name="q7" value="4"></td>
+        <td><input type="radio" name="q7" value="3"></td>
+        <td><input type="radio" name="q7" value="2"></td>
+        <td><input type="radio" name="q7" value="1"></td>
+      </tr>
+      <tr>
+        <td><p style="text-align: center;">8</p></td>
+        <td>Rate the freedom to propose ,modify , suggest and incorporate new topics In the syllabus through proper forum.</td>
+        <td><input type="radio" name="q8" value="5"></td>
+        <td><input type="radio" name="q8" value="4"></td>
+        <td><input type="radio" name="q8" value="3"></td>
+        <td><input type="radio" name="q8" value="2"></td>
+        <td><input type="radio" name="q8" value="1"></td>
+      </tr>
+      <tr>
+        <td><p style="text-align: center;">9</p></td>
+        <td>Rate the relevance of the curriculum to the society needs.</td>
+        <td><input type="radio" name="q9" value="5"></td>
+        <td><input type="radio" name="q9" value="4"></td>
+        <td><input type="radio" name="q9" value="3"></td>
+        <td><input type="radio" name="q9" value="2"></td>
+        <td><input type="radio" name="q9" value="1"></td>
+      </tr>
+      <tr>
+        <td><p style="text-align: center;">10</p></td>
+        <td>Rate the opportunities for employment and entrepreneurship.</td>
+        <td><input type="radio" name="q10" value="5"></td>
+        <td><input type="radio" name="q10" value="4"></td>
+        <td><input type="radio" name="q10" value="3"></td>
+        <td><input type="radio" name="q10" value="2"></td>
+        <td><input type="radio" name="q10" value="1"></td>
+      </tr>
+      
+    </table>
+    
+  
+    <label for="suggestions" style="display: inline; vertical-align: middle;">Any other suggestions:</label>
+<textarea id="suggestions" name="suggestions" rows="2" cols="50" style="vertical-align: middle;"></textarea><br>
+
+    
+        <p style="text-align: center;"</p><input type="submit" value="Submit">
+  </form>
+  </div>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx8T3VJ2vVcps-qR8nYlEbBCJarFU_slfQxsng6NGBx45zEgIaE-8fTJUGuq3cT2XYCYw/exec';
+  
+    const form = document.forms['google-sheet'];
+  
+    form.addEventListener('submit',e => {
+      e.preventDefault();
+  
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => alert("Thanks for Feeback.....!"))
+        .catch(error =>
+   
+  console.error('Error!', error.message));
+    });
+  </script>  
+</body>
+</html>

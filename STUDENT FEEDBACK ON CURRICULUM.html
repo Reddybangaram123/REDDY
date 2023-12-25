@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>STUDENT FEEDBACK ON CURRICULUM</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: left;
+      margin: 0 auto;
+      width: 80%;
+    }
+    h2 {
+      margin-bottom: 20px;
+      text-align: center; /* Add this line to center-align the heading */
+    }
+    label {
+      display: inline-block;
+      width: 150px;
+      text-align: left;
+      margin-bottom: 10px;
+    }
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="date"],
+    textarea {
+      width: 250px;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+    input[type="submit"],
+    input[type="reset"] {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      margin-right: 10px;
+    }
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+      background-color: #45a049;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 20px auto;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <h2>STUDENT FEEDBACK ON CURRICULUM</h2>
+  <div>
+    <!-- Rest of your HTML content -->
+  </div>
+</body>
+</html>
+
+  <div>
+  <form  method="POST" name = "google-sheet">
+   <div style="text-align: left;">
+  <div style ="text-align: left;">
+  <div style="text-align: left;">
+  <label for="Roll No">Roll No:</label>
+  <input type="text" id="Roll No" name="Roll No" required>
+</div>
+
+<div style="text-align: left;">
+  <label for="Name">Student Name:</label>
+  <input type="text" id="Student Name" name="Student Name" required><br>
+</div>
+
+<div style="text-align: left;">
+  <label for="yearSemester">Year & Semester:</label>
+  <select id="yearSemester" name="yearSemester" style="width: 250px;" required>
+    <option value="year1semester1">Year 1 Semester 1</option>
+    <option value="year1semester2">Year 1 Semester 2</option>
+    <option value="year2semester1">Year 2 Semester 1</option>
+    <option value="year2semester2">Year 2 Semester 2</option>
+    <option value="year3semester1">Year 3 Semester 1</option>
+    <option value="year3semester2">Year 3 Semester 2</option>
+    <option value="year4semester1">Year 4 Semester 1</option>
+    <option value="year4semester2">Year 4 Semester 2</option>
+  </select><br>
+</div>
+
+<div style="text-align: left;">
+  <label for="Branch">Branch:</label>
+  <select id="Branch" name="Branch" style="width: 250px;" required>
+    <option value="CSE">CSE</option>
+    <option value="CSE-CS">CSE-CS</option>
+    <option value="CIVIL">CIVIL</option>
+    <option value="AGRI">AGRI</option>
+    <option value="EEE">EEE</option>
+    <option value="ECE">ECE</option>
+    <option value="MECH">MECH</option>
+      </select><br>
+</div>
+
+<div style="text-align: left;">
+  <label for="academicYear">Academic Year:</label>
+  <select id="academicYear" name="academicYear" style="width: 250px;" required>
+    <option value="2020-2021">2020-2021</option>
+    <option value="2021-2022">2021-2022</option>
+    <option value="2022-2023">2022-2023</option>
+    <option value="2023-2024">2023-2024</option>
+    <option value="2024-2025">2024-2025</option>
+  </select>
+</div>
+
+    <p>The intention of this questionnarie is to collect the information about your satisfaction towards the curriculum, learning and evaluation which will be used as feedback for quality improvement of the program of studies/institution. The information provided by you will be kept confidential</p><br>
+    
+    <p>Please indicate your level of satisfaction with the following statement by choosing between 1 and 5.</p><br>
+    <p>Rating Score: Excellent(5), Very Good(4), Good(3), Average(2), Below Average(1).</p>
+    
+    <table>
+      <tr>
+        <th>S.No</th>
+        <th>QUESTIONS</th>
+        <th>5</th>
+        <th>4</th>
+        <th>3</th>
+        <th>2</th>
+        <th>1</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Rate the relevance of curriculum and syllabus to the course</td>
+        <td><input type="radio" name="q1" value="5"></td>
+        <td><input type="radio" name="q1" value="4"></td>
+        <td><input type="radio" name="q1" value="3"></td>
+        <td><input type="radio" name="q1" value="2"></td>
+        <td><input type="radio" name="q1" value="1"></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Rate the extent of syllabus covered in the class</td>
+        <td><input type="radio" name="q2" value="5"></td>
+        <td><input type="radio" name="q2" value="4"></td>
+        <td><input type="radio" name="q2" value="3"></td>
+        <td><input type="radio" name="q2" value="2"></td>
+        <td><input type="radio" name="q2" value="1"></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Rate the usage of teaching aids in the class by faculty to facilitate teaching.</td>
+        <td><input type="radio" name="q3" value="5"></td>
+        <td><input type="radio" name="q3" value="4"></td>
+        <td><input type="radio" name="q3" value="3"></td>
+        <td><input type="radio" name="q3" value="2"></td>
+        <td><input type="radio" name="q3" value="1"></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Rate the offering of the elective in terms of relevancy to the curriculum.</td>
+        <td><input type="radio" name="q4" value="5"></td>
+        <td><input type="radio" name="q4" value="4"></td>
+        <td><input type="radio" name="q4" value="3"></td>
+        <td><input type="radio" name="q4" value="2"></td>
+        <td><input type="radio" name="q4" value="1"></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Rate the size of the syllabus in terms of the load of the student.</td>
+        <td><input type="radio" name="q5" value="5"></td>
+        <td><input type="radio" name="q5" value="4"></td>
+        <td><input type="radio" name="q5" value="3"></td>
+        <td><input type="radio" name="q5" value="2"></td>
+        <td><input type="radio" name="q5" value="1"></td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Rate the out of the class room learning(Guest lectures, seminars, workshops, value added programs, conferences and competitions)</td>
+        <td><input type="radio" name="q6" value="5"></td>
+        <td><input type="radio" name="q6" value="4"></td>
+        <td><input type="radio" name="q6" value="3"></td>
+        <td><input type="radio" name="q6" value="2"></td>
+        <td><input type="radio" name="q6" value="1"></td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Rate the Transparency in the assessment processes</td>
+        <td><input type="radio" name="q7" value="5"></td>
+        <td><input type="radio" name="q7" value="4"></td>
+        <td><input type="radio" name="q7" value="3"></td>
+        <td><input type="radio" name="q7" value="2"></td>
+        <td><input type="radio" name="q7" value="1"></td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Rate the promptness in evaluating the answer scripts</td>
+        <td><input type="radio" name="q8" value="5"></td>
+        <td><input type="radio" name="q8" value="4"></td>
+        <td><input type="radio" name="q8" value="3"></td>
+        <td><input type="radio" name="q8" value="2"></td>
+        <td><input type="radio" name="q8" value="1"></td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Rate the opportunity for students to participate in internship, student exchange and field visit</td>
+        <td><input type="radio" name="q9" value="5"></td>
+        <td><input type="radio" name="q9" value="4"></td>
+        <td><input type="radio" name="q9" value="3"></td>
+        <td><input type="radio" name="q9" value="2"></td>
+        <td><input type="radio" name="q9" value="1"></td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>Rate the opportunities in the college for research activities.</td>
+        <td><input type="radio" name="q10" value="5"></td>
+        <td><input type="radio" name="q10" value="4"></td>
+        <td><input type="radio" name="q10" value="3"></td>
+        <td><input type="radio" name="q10" value="2"></td>
+        <td><input type="radio" name="q10" value="1"></td>
+      </tr>
+      
+    </table>
+    <label for="suggestions" style="display: inline; vertical-align: middle;">Any other suggestions:</label>
+<textarea id="suggestions" name="suggestions" rows="2" cols="50" style="vertical-align: middle;"></textarea><br>
+
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" required><br>
+
+    <p style="text-align: center;"</p><input type="submit" value="Submit">
+  </form>
+  </div>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwRzsbUf8WtXDm-0QH3DLtSjdgkwqIxZccbEuzVyMNPsEhtVbek15mWSGqoUrVvlLbJNQ/exec';
+  
+    const form = document.forms['google-sheet'];
+  
+    form.addEventListener('submit',e => {
+      e.preventDefault();
+  
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => alert("Thanks for Feeback.....!"))
+        .catch(error =>
+   
+  console.error('Error!', error.message));
+    });
+  </script>  
+</body>
+</html>
